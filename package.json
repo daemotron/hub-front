@@ -1,0 +1,35 @@
+{
+  "name": "hub-front",
+  "version": "0.1.0-dev",
+  "description": "This project repository contains all code of the Stormrose Hub HTML front end, i. e. graphics, style sheets, HTML templates and corresponding libraries and dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormrose-va/hub-front.git"
+  },
+  "author": "The Stormrose Project",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stormrose-va/hub-front/issues"
+  },
+  "homepage": "https://github.com/stormrose-va/hub-front#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "tether": "^1.4.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
