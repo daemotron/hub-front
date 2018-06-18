@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const cleanCss = require('gulp-clean-css');
+// const cleanCss = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 
@@ -14,7 +14,7 @@ gulp.task('sass', function() {
             'src/scss/*.scss',
         ])
         .pipe(sass())
-        .pipe(cleanCss({compatibility: 'ie8'}))
+        // .pipe(cleanCss({compatibility: 'ie8'}))
         .pipe(rename({
             suffix: '.min',
         }))
@@ -49,6 +49,7 @@ gulp.task('fonts', function() {
     return gulp.src([
         'node_modules/font-awesome/fonts/fontawesome-webfont.*',
         'node_modules/font-awesome/fonts/FontAwesome.otf',
+        'src/fonts/Aileron-*',
     ])
         .pipe(gulp.dest('dist/assets/fonts'))
         .pipe(browserSync.stream());
