@@ -9,7 +9,6 @@ const rename = require('gulp-rename');
 gulp.task('sass', function() {
     return gulp.src(
         [
-            'node_modules/bootstrap/scss/bootstrap.scss',
             'node_modules/font-awesome/scss/font-awesome.scss',
             'src/scss/*.scss',
         ])
@@ -57,7 +56,9 @@ gulp.task('fonts', function() {
 
 // Move the image assets into our /dist/assets/img folder
 gulp.task('img', function() {
-    return gulp.src(['src/img/*.png', 'src/img/*.jpg', 'src/img/*.gif'])
+    return gulp.src(
+        ['src/img/*.png', 'src/img/*.jpg', 'src/img/*.gif', 'src/img/*.svg']
+    )
         .pipe(gulp.dest('dist/assets/img'))
         .pipe(browserSync.stream());
 });

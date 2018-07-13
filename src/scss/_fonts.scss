@@ -33,3 +33,5 @@
 @include font-declaration('Aileron', 'Aileron-Thin-webfont', 200, normal);
 @include font-declaration('Aileron', 'Aileron-UltraLightItalic-webfont', 100, italic);
 @include font-declaration('Aileron', 'Aileron-UltraLight-webfont', 100, normal);
+
+$font-family-sans-serif: Aileron;
