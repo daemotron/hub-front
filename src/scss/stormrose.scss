@@ -1,0 +1,18 @@
+@import "colors";
+@import "fonts";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    background: $color-bg;
+    padding-top: 3.5rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.jumbotron {
+    background-image: url('../img/jumbotron-gull.jpg');
+    background-size: cover;
+}
