@@ -15,8 +15,26 @@ body {
 .jumbotron {
     background-image: url('../img/jumbotron-gull.jpg');
     background-size: cover;
+    border-radius: 0;
 }
 
 .bg-tone {
     background: $color-tone;
+}
+
+.bg-tertiary {
+    background: $color-secondary;
+}
+
+.text-tertiary {
+    color: $color-secondary;
+}
+
+.btn-circle.btn-xl {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
 }
