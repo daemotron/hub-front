@@ -7,10 +7,10 @@
         font-family: quote($family);
         src: url(quote('../fonts/' + $path + '.eot'));
         src: url(quote('../fonts/' + $path + '.eot?#iefix')) format('embedded-opentype'),
-            url(quote('../fonts/' + $path + '.woff2')) format('woff2'),
+            // url(quote('../fonts/' + $path + '.woff2')) format('woff2'),
             url(quote('../fonts/' + $path + '.woff')) format('woff'),
             url(quote('../fonts/' + $path + '.ttf')) format('truetype'),
-            url(quote('../fonts/' + $path + '.svg#aileronblack_italic')) format('svg');
+            url(quote('../fonts/' + $path + '.svg')) format('svg');
         font-weight: unquote($weight);
         font-style: unquote($style);
     }
